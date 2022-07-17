@@ -26,10 +26,10 @@ function App() {
   console.log(userLists);
   return (
     <React.Fragment>
-      <section id="goal-form">
+      <section id="form">
         <AddUser onAddUser={addUserHandler}/>
       </section>
-      <section id="goal-form">
+      <section id="form">
         <UserList items={userLists} onDeleteItem={deleteItemHandler}/>
       </section>
     </React.Fragment>
