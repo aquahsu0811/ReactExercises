@@ -6,6 +6,8 @@ const AuthContext = React.createContext({
   onLogin: (email, password) => {}
 });
 
+export default AuthContext;
+
 export const AuthContextProvider = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -39,5 +41,3 @@ export const AuthContextProvider = (props) => {
     </AuthContext.Provider>
   );
 };
-
-export default AuthContext;
