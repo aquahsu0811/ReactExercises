@@ -9,6 +9,7 @@ Side effect is anything else than that, like store data in browser storage, send
 - [dependency] : Only re-render when the value is changing.
 
 # UseReducer 
+Sometimes, you have more complex state, like getting multiple states, multiple ways of changing it or dependencies to other states. useReducer can be uded as a replacement for useState, useReducer is a more powerful state management.
 ###  _const [state, dispatchFn]  =  useReducer(reducerFn, initialState, initFn);_
 
 - [State] - The state snapshot used in the component re-render/re-evaluation cycle.
