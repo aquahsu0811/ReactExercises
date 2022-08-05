@@ -4,6 +4,19 @@ Expose functionalities from a react component to its parent component , then use
 ### _useImperativeHandle_
 Allows to use the component or functionalities from inside this component imperatively. Not through the regular state props management, not by controlling the component through state in the parent component, but instead by directly calling or manipulating something in the component programmatically.
 
+### parent component
+```
+const App = () => {
+    const emailInputRef = useRef();
+    
+    const submitHandler = (event) => {
+        emailInputRef.current.focus(); // from useImperativeHandle 
+    };
+    
+     return ( <Input ref={emailInputRef} /> );
+};
+```
+### child Input component
 ```
 import React, { useRef, useImperativeHandle } from 'react';
 
