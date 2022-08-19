@@ -7,9 +7,11 @@ A function that delays an action until later.
 An action creator function that does not return the action itself but another function which eventually reutrns the action.
 
 ### App.js
+```
   useEffect(() => {
     dispatch(fetchCartData());
   }, [dispatch]);
+```
 
 ### cart-action.js
 
