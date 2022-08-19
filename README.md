@@ -2,6 +2,10 @@
 Reducers must be pure, side-effect free, synchronous functions.
 side-effects and async tasks could be executed inside the components(useEffect) or action creators.
 
+### Requirements
+npm install react-redux
+npm install @reduxjs/toolkit
+
 ### Action creators- Thunk
 A function that delays an action until later.
 An action creator function that does not return the action itself but another function which eventually reutrns the action.
