@@ -3,7 +3,7 @@ A state management system for cross-component or app-wide state.
 ### Redux Concetps
 Reducer Function: Not useReduer, it just a general concept. Ruducer function is pure javascript, called by redux library.
 
-
+![image](https://github.com/aquahsu0811/ReactExercises/blob/useRedux/useRedux.png)
 
 
 
